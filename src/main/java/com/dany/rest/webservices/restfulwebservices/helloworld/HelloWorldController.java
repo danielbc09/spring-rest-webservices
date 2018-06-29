@@ -1,4 +1,4 @@
-package com.dany.rest.webservices.restfulwebservices;
+package com.dany.rest.webservices.restfulwebservices.helloworld;
 
 import com.dany.rest.webservices.restfulwebservices.helloworld.HelloWorldBean;
 import org.springframework.web.bind.annotation.GetMapping;

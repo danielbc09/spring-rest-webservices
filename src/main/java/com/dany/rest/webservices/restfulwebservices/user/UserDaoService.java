@@ -1,6 +1,5 @@
 package com.dany.rest.webservices.restfulwebservices.user;
 
-import com.dany.rest.webservices.restfulwebservices.User;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

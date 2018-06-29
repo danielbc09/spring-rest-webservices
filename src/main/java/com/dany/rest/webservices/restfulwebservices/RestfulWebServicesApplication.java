@@ -1,4 +1,4 @@
-package com.dany.rest.webservices.restfulwebservices.helloworld;
+package com.dany.rest.webservices.restfulwebservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.dany.rest.webservices.restfulwebservices.user;
+package com.dany.rest.webservices.restfulwebservices.helloworld;
 
 /**
  * Created by bautisj on 6/26/2018.

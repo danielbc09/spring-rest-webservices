@@ -1,4 +1,4 @@
-package com.dany.rest.webservices.restfulwebservices;
+package com.dany.rest.webservices.restfulwebservices.user;
 
 import java.util.Date;
 
