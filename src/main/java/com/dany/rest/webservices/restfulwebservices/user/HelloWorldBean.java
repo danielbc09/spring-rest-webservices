@@ -1,6 +1,4 @@
-package com.dany.rest.webservices.restfulwebservices;
-
-import org.springframework.context.annotation.Bean;
+package com.dany.rest.webservices.restfulwebservices.user;
 
 /**
  * Created by bautisj on 6/26/2018.
