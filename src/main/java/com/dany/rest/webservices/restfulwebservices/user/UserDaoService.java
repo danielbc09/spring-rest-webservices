@@ -13,7 +13,7 @@ import java.util.List;
 public class UserDaoService {
 
     private static List<User> users = new ArrayList<>();
-    private static int usersCount = 3;
+    private static int usersCount = 4;
 
     static {
         users.add(new User(1, "Daniel", new Date()));
