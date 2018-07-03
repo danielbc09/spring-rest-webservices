@@ -26,7 +26,7 @@ public class UserResource {
     public User retrieveUser(@PathVariable int id){
         User user = service.findUser(id);
         if(user == null)
-            throw  new UserNotFoundException("id -"+ id);
+            throw  new UserNotFoundException("id-"+ id);
         return user;
     }
 

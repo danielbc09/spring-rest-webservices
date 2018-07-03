@@ -25,12 +25,12 @@ public class CustomizedResponseEntityExceptionHandler
                new ExceptionResponse(new Date(), exception.getMessage(), webRequest.getDescription(false));
         return new ResponseEntity(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-/*
+
     @ExceptionHandler(UserNotFoundException.class)
-    public final ResponseEntity<Object> handleUserNotFoundException
+    public final ResponseEntity<Object> handleUserNotFoundException(UserNotFoundException userExcepion, WebRequest webRequest){
         ExceptionResponse exceptionResponse =
-                new ExceptionResponse(new Date(), exception.getMessage(), webRequest.getDescription(false));
-        return new ResponseEntity(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+                new ExceptionResponse(new Date(), userExcepion.getMessage(), webRequest.getDescription(false));
+        return new ResponseEntity(exceptionResponse, HttpStatus.NOT_FOUND);
     }
-*/
+
 }
