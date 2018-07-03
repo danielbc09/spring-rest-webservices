@@ -1,5 +1,8 @@
 package com.dany.rest.webservices.restfulwebservices.user;
 
+import com.dany.rest.webservices.restfulwebservices.post.Post;
+
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -10,6 +13,7 @@ public class User {
     private Integer id;
     private String name;
     private Date birthDate;
+    private ArrayList<Post> userPosts;
 
     protected User(){
 
@@ -21,6 +25,13 @@ public class User {
         this.birthDate = birthDate;
     }
 
+
+    public User(Integer id, String name, Date birthDate, ArrayList<Post> posts) {
+        this.id = id;
+        this.name = name;
+        this.birthDate = birthDate;
+        this.userPosts = posts;
+    }
     public Integer getId() {
         return id;
     }
@@ -45,9 +56,17 @@ public class User {
         this.birthDate = birthDate;
     }
 
+    public ArrayList<Post> getUserPosts() {
+        return userPosts;
+    }
+
+    public void setUserPosts(ArrayList<Post> userPosts) {
+        this.userPosts = userPosts;
+    }
+
     @Override
     public String toString() {
-        return "User{" +
+        return "Post{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", birthDate=" + birthDate +
