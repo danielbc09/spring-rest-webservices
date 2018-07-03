@@ -2,6 +2,8 @@ package com.dany.rest.webservices.restfulwebservices.user;
 
 import com.dany.rest.webservices.restfulwebservices.post.Post;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -11,7 +13,10 @@ import java.util.Date;
 public class User {
 
     private Integer id;
+    @Size(min = 2, message = "Name shoud have at least 2 characters")
     private String name;
+
+    @Past(message = "The Date must be in the past")
     private Date birthDate;
     private ArrayList<Post> userPosts;
 
