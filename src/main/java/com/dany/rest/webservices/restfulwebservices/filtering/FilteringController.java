@@ -42,4 +42,6 @@ public class FilteringController {
         mappingJacksonValue.setFilters(filters);
         return mappingJacksonValue;
     }
+
+    //TODO Refactoring filter metho
 }
