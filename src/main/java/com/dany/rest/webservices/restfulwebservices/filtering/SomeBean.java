@@ -1,18 +1,17 @@
 package com.dany.rest.webservices.restfulwebservices.filtering;
 
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Created by bautisj on 7/26/2018.
  */
-
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
 
-    @JsonIgnore
     private String value1;
     private String value2;
-    @JsonIgnore
     private String value3;
 
     public SomeBean(String value1, String value2, String value3) {
